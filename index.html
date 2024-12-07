@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Interest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <article>
+      <header>
+        <div>💰</div>
+        <div>Compound Interest Calculator</div>
+        <div>💵</div>
+      </header>
+      <main>
+        <form>
+          <div>Principal</div>
+          <input id="principal" />
+          <div>Period</div>
+          <select id="period">
+            <option value="360">daily</option>
+            <option value="12">monthly</option>
+            <option value="4">quarterly</option>
+            <option value="1">yearly</option>
+          </select>
+          <div>APR</div>
+          <input type="range" id="apr" value="2" min="0.25" max="50" step="0.25"></input>
+          <div>Years</div>
+          <input type="number" id="years" />
+          <button type="button" id="button">Calculate!</button>
+        </form>
+        <p>% Interest is <output id="accumulated" /></p>
+        <p>Total is <output id="total" /></p>
+        <div class="images">
+        <img src="coinimage.jpg">
+        <img src="cashimage.jpeg">
+        </div>
+      </main>
+      <footer>
+        <div>© 2024</div>
+        <div>https://codesandbox.io/p/sandbox/compound-interest-calculator-hw1-pt84f3</div>
+      </footer>
+    </article>
+  </body>
+</html>
